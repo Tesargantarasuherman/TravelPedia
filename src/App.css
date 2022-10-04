@@ -1,38 +1,215 @@
-.App {
+
+.navbar{
+  background-image: url('./assets/img/background.jpg');
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar-list{
+  display: flex;
+  justify-content: space-around;
+  padding:10px 0px;
+  color: white;
+  align-items: center;
+}
+.navbar-menu>li{
+  display: inline;
+  margin:0px 10px;
+}
+.navbar-content{
+  margin: auto;
+  width: 50%;
+}
+.title-navbar-content{
+  font-size: 36pt;
+  text-align: center;
+  color: #1CA0E5;
+}
+.description-navbar-content{
+  color: #1CA0E5;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-search-navbar{
+  margin-top: 10%;
+  background-color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding:10px;
+  background-color: rgba(240, 240, 240, 0.6);
+  border-radius: 40px;
+  width: 100%;
+}
+.input-search-destination{
+  flex:4;
+}
+.input,.input-search-date{
+  border:none;
+  padding-left: 20px;
+}
+.input::placeholder,.input-search-date::placeholder{
+  padding-left: 20px;
+}
+
+.input:focus,.input-search-date:focus{
+  outline: none;
+}
+.input-search-date{
+  flex:1;
+  border: 1px solid #C2C8CF;
+  border-top: none;
+  border-bottom: none;
+}
+.icon-search-navbar{
+  background-color: white;
+  border-radius: 20px 0px 0px 20px;
+  padding:5px;
+}
+.container-content{
+  margin: 20pt auto;
+  width: 70%;
+}
+.label-container-content{
+  font-size: 24pt;
+  text-align: center;
+}
+.description-container-content{
+  text-align: center;
+}
+.button-input-search{
+  padding: 20px;
+  border-radius: 50%;
+  border: none;
+  margin:-10px;
+  background-color: #1CA0E5;
+
+}
+button>span{
+  font-size: 18px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container-button-sort-category{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0px;
 }
+.container-button-sort-category>button{
+  border: 1px solid #C2C8CF;
+  background-color: transparent;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: #C2C8CF;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container-button-sort-category>button:hover{
+  background-color: #1CA0E5;
+  color: white;
+  transition: 1s;
+}
+.container-button-sort-category>button.active{
+  background-color: #1CA0E5;
+  color: white;
+}
+.text-location-content,.text-price-content{
+  color: #C2C8CF;
+}
+.body-card-content{
+  width: 400px;
+}
+.image-content{
+  width: 100%;
+  border-radius: 20px;
+}
+.container-title{
+  display: flex;
+  justify-content: space-between;
+}
+.description-content{
+  color: #ced6e0;
+}
+.link-content{
+  color: #1CA0E5;
+  text-decoration: none;
+}
+.spacing-content{
+  margin:20px 0;
+  background-color: #ced6e0;
+  height: 2px;
+  width: 100%;
+}
+.container-benefit{
+  background-color: #dedede;
+  padding:20px 0;
+}
+.body-benefit{
+  width: 70%;
+  margin:20px auto;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.body-card-benefit{
+  display: flex;
+  justify-content: space-between;
+
+}
+.img-benefit{
+  width: 400px;
+  margin: 0 auto;
+
+}
+.description-benefit{
+  flex:1;
+}
+.text-center{
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .navbar-list{
+    padding:10px 0px;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-menu>li{
+    margin:0px 5px;
+    font-size: 8pt;
+    font-weight: bold;
+  }
+  .title-navbar-content{
+    font-size: 24pt;
+  }
+  .navbar-content{
+    width: 90%;
+    padding:50px 0;
+  }
+  .input-search-navbar{
+    margin-top: 10%;
+    padding:5px;
+    border-radius: 40px;
+  }
+  .input,.input-search-date{
+    font-size: 10px;
+    width: 70px;
+  }
+  .input::placeholder,.input-search-date::placeholder{
+    padding-left: 0px;
+  }
+  .button-input-search{
+    padding: 15px;
+    margin:-7px;
+  }
+  .container-button-sort-category{
+    max-width: 800px;
+    overflow-x: scroll;
+  }
+  .container-button-sort-category>button{
+    border: 1px solid #C2C8CF;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-size: 10px;
   }
 }
